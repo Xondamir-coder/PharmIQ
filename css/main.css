@@ -587,7 +587,7 @@ body {
 }
 
 .team {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.049)), url(/img/team.jfif);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.049)), url(img/team.jfif);
   background-size: cover;
   background-position: center;
   grid-column: 1/-1;
