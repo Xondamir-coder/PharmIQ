@@ -3,6 +3,8 @@
     background-color: $primary;
     color: $white;
     padding: 6rem 0;
+    position: relative;
+    overflow: hidden;
 
     @media only screen and (max-width: $bp-medium) {
         padding: 2rem 0;
@@ -23,6 +25,39 @@
 
         @media only screen and (max-width: $bp-medium) {
             padding: 1.3rem 0;
+        }
+    }
+
+    &__wave {
+        position: absolute;
+        top: 35%;
+        left: -17%;
+
+        @media only screen and (max-width: $bp-larger) {
+            top: 47%;
+            left: -21%;
+        }
+
+        @media only screen and (max-width: $bp-large) {
+            top: 51%;
+            left: -23%;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            top: 51%;
+            left: -28%;
+        }
+
+        @media only screen and (max-width: 500px) {
+            top: 51%;
+            left: -49%;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            height: 60rem;
+            width: 70rem;
+            top: 51%;
+            left: -23%;
         }
     }
 }
@@ -211,10 +246,8 @@
     }
 
     &__img {
-        @media only screen and (max-width: $bp-medium) {
-            height: 5rem;
-            width: 20rem;
-        }
+        max-width: 100%;
+        height: auto;
     }
 }
 
@@ -274,9 +307,15 @@
     position: relative;
     width: max-content;
     padding-bottom: 2rem;
+    padding-top: 2rem;
 
     @media only screen and (max-width: $bp-medium) {
+        width: 20rem;
         padding-bottom: 1rem;
+    }
+
+    @media only screen and (max-width: 500px) {
+        margin-left: 7rem;
     }
 
     &--link {
@@ -284,6 +323,8 @@
         height: 100%;
         position: absolute;
     }
+
+
 }
 
 .box--4 {
