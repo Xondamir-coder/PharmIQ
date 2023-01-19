@@ -1,0 +1,86 @@
+.staff {
+    background-color: #fff;
+    grid-column: 1/-1;
+    padding: 7rem 0;
+    overflow: hidden;
+
+    @media only screen and (max-width: $bp-medium) {
+        padding: 0;
+        margin-bottom: 3rem;
+    }
+
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    // justify-items: center;
+    // justify-content: center;
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    &__portrait {
+        transform: translateX(2rem) translateY(1rem);
+        background-color: #45A9D3;
+        width: 28rem;
+        height: 35rem;
+    }
+
+    &__box {
+        margin-top: 3rem;
+        height: 60rem;
+        width: 32rem;
+        box-shadow: 0 1rem 2.5rem rgba(rgb(69, 199, 202), .2);
+        transition: transform .3s;
+
+
+        &:hover {
+            transform: scale(1.06);
+        }
+    }
+
+    &__name {
+        font-size: 2rem;
+        margin-top: 3rem;
+        text-align: center;
+        color: #2D3232;
+    }
+
+    &__role {
+        text-align: center;
+        color: #677A8B;
+        margin-top: 1rem;
+    }
+
+    &__text {
+        text-align: center;
+        margin-top: 3rem;
+        font-size: 1.3rem;
+        position: relative;
+        font-weight: bold;
+
+        &::before {
+            content: "\201C";
+            font-size: 2.5rem;
+            position: absolute;
+            top: -42%;
+            left: 6%;
+        }
+
+        &::after {
+            content: "\201D";
+            font-size: 2.5rem;
+            position: absolute;
+            top: 102%;
+            left: 89%;
+        }
+
+        span {
+            font-size: 3rem;
+        }
+    }
+}
+
+.displacement {
+    margin-bottom: 3rem;
+}

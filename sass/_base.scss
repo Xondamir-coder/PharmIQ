@@ -1,0 +1,70 @@
+$primary: #007382;
+$primary-dark: #0d4e57;
+$primary-light: #1f7d89;
+$white: #fff;
+$bp-largest: 75em; //1200px
+$bp-larger: 65em; //1040px
+$bp-large: 56.25em; //900px
+$bp-medium: 45em; //720px
+$bp-small: 20em;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; //1rem = 10px, 62.5% of 16px = 10px
+    //user-select: $primary;
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 56.25%;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 50%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 40%;
+    }
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: max-content max-content max-content 80vh;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 1rem 4rem rgba(0, 0, 0, .15);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+}
+
+::selection {
+    background-color: $primary-light;
+    color: $white;
+}

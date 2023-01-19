@@ -1,0 +1,78 @@
+.kits {
+    background-color: #4DB1B11A;
+    grid-column: 1/-1;
+    padding: 4rem;
+    display: grid;
+    justify-items: center;
+    row-gap: 2.5rem;
+    position: relative;
+
+    &__box {
+        text-align: center;
+        padding: 1rem;
+        background-color: $white;
+        box-shadow: 0rem 1rem 2rem rgba(#000, .3);
+    }
+
+    &__text {
+        font-weight: 500;
+        color: $primary;
+    }
+
+    &__img {
+        height: 6.5rem;
+        width: 5rem;
+        position: absolute;
+
+        top: 85%;
+        left: 96%;
+
+        @media only screen and (max-width:$bp-large) {
+            height: 5rem;
+            width: 4rem;
+            top: 2%;
+            left: 95%;
+        }
+
+        @media only screen and (max-width:$bp-medium) {
+            left: 92%;
+        }
+
+        @media only screen and (max-width:$bp-small) {
+            left: 90%;
+        }
+    }
+}
+
+.heading-2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 1.9rem;
+    font-weight: 500;
+    background-image: linear-gradient(to right, #007382, rgb(138, 217, 228));
+    background-clip: text;
+    color: transparent;
+    transition: transform .4s;
+}
+
+.heading-3 {
+    color: $primary;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.heading-5 {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 1.9rem;
+    font-weight: 500;
+    background-image: linear-gradient(to right, $white , rgb(138, 217, 228));
+    background-clip: text;
+    color: transparent;
+    transition: transform .4s;
+}
+
+.padding-top {
+    padding-top: 3rem;
+}
