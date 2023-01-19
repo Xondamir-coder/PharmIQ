@@ -1,4 +1,8 @@
 .footer {
+    background-image: url(../img/footer-wave.svg);
+    // background-size: cover;
+    background-position: 0% 103%;
+    background-repeat: no-repeat;
     grid-column: 1/-1;
     background-color: $primary;
     color: $white;
@@ -10,8 +14,19 @@
         padding: 2rem 0;
     }
 
+    @media only screen and (max-width: 624px) {
+        background-size: 120rem;
+        background-position: 0% 103%;
+    }
+
+    @media only screen and (max-width: 500px) {
+        background-size: 88rem;
+        background-position: 11% 104%;
+    }
+
     display: grid;
     grid-template-rows: repeat(3, max-content);
+    // grid-template-columns: 70vw;
     grid-template-columns: 70vw;
     row-gap: 3rem;
     justify-content: center;
@@ -21,48 +36,48 @@
         font-size: 1.7rem;
         font-weight: 400;
         line-height: 2.8rem;
-        text-transform: capitalize;
 
         @media only screen and (max-width: $bp-medium) {
             padding: 1.3rem 0;
         }
     }
 
-    &__wave {
-        position: absolute;
-        top: 38%;
-        left: -17%;
+    // &__wave {
+    //     position: absolute;
+    //     top: 38%;
+    //     left: -17%;
 
-        @media only screen and (max-width: $bp-larger) {
-            top: 47%;
-            left: -21%;
-        }
+    //     @media only screen and (max-width: $bp-larger) {
+    //         top: 47%;
+    //         left: -21%;
+    //     }
 
-        @media only screen and (max-width: $bp-large) {
-            top: 51%;
-            left: -23%;
-        }
+    //     @media only screen and (max-width: $bp-large) {
+    //         top: 51%;
+    //         left: -23%;
+    //     }
 
-        @media only screen and (max-width: $bp-medium) {
-            top: 51%;
-            left: -28%;
-        }
+    //     @media only screen and (max-width: $bp-medium) {
+    //         top: 51%;
+    //         left: -28%;
+    //     }
 
-        @media only screen and (max-width: 500px) {
-            top: 51%;
-            left: -49%;
-        }
+    //     @media only screen and (max-width: 500px) {
+    //         top: 51%;
+    //         left: -49%;
+    //     }
 
-        @media only screen and (max-width: $bp-small) {
-            height: 60rem;
-            width: 70rem;
-            top: 51%;
-            left: -23%;
-        }
-    }
+    //     @media only screen and (max-width: $bp-small) {
+    //         height: 60rem;
+    //         width: 70rem;
+    //         top: 51%;
+    //         left: -23%;
+    //     }
+    // }
 }
 
 .heading-6 {
+    font-family: "Jost", sans-serif;
     font-size: 3rem;
     font-weight: 600;
     line-height: 4.2rem;
@@ -367,6 +382,7 @@
 .container--3 {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 2rem 0;
     border-top: 2px solid #3fa1aed8;
 }

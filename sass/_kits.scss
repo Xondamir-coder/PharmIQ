@@ -1,3 +1,9 @@
+.height-not-auto {
+    @media only screen and (max-width: 500px) {
+        height: 14rem;
+    }
+}
+
 .kits {
     background-color: #4DB1B11A;
     grid-column: 1/-1;
@@ -8,10 +14,23 @@
     position: relative;
 
     &__box {
+        width: 78rem;
         text-align: center;
         padding: 1rem;
         background-color: $white;
         box-shadow: 0rem 1rem 2rem rgba(#000, .3);
+
+        @media only screen and (max-width: $bp-large) {
+            width: 60rem;
+        }
+
+        @media only screen and (max-width: 500px) {
+            width: 35rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            width: auto;
+        }
     }
 
     &__text {
@@ -67,9 +86,7 @@
     font-size: 3rem;
     margin-top: 1.9rem;
     font-weight: 500;
-    background-image: linear-gradient(to right, $white , rgb(138, 217, 228));
-    background-clip: text;
-    color: transparent;
+    color: $white;
     transition: transform .4s;
 }
 
