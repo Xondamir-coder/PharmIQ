@@ -727,7 +727,7 @@ body {
   padding: 4rem;
   display: grid;
   justify-items: center;
-  row-gap: 2.5rem;
+  row-gap: 2.49999rem;
   position: relative;
 }
 .kits__box {
