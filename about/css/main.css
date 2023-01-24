@@ -807,6 +807,7 @@ body {
 }
 
 .team {
+  padding: 3rem;
   background-image: linear-gradient(rgba(255, 255, 255, 0.132), rgba(31, 125, 137, 0.2)), url(../img/team.jfif);
   background-size: cover;
   background-position: center;
@@ -829,7 +830,7 @@ body {
     margin: 0 0 1.999rem 1.99999rem;
   }
 }
-@media only screen and (max-width: 20em) {
+@media only screen and (max-width: 500px) {
   .team__box {
     width: auto;
   }

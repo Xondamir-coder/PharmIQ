@@ -1,4 +1,5 @@
 .team {
+    padding: 3rem;
     background-image: linear-gradient(rgba(255, 255, 255, 0.132), rgba(#1f7d89, .2)), url(../img/team.jfif);
     background-size: cover;
     background-position: center;
@@ -12,6 +13,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: max-content;
 
+
     &__box {
         width: 50rem;
 
@@ -19,7 +21,7 @@
             margin: 0 0 1.999rem 1.99999rem;
         }
 
-        @media only screen and (max-width: $bp-small) {
+        @media only screen and (max-width: 500px) {
             width: auto;
         }
     }
