@@ -249,6 +249,10 @@
         // left: 30%;
         left: 50%;
         transform: translate(-50%, -50%);
+
+        @media only screen and (max-height: 700px) {
+            top: 47%;
+        }
     }
 
     &__checkbox {
@@ -311,6 +315,10 @@
     &__item {
         padding: 6px;
         margin: 1rem;
+
+        @media only screen and (max-height: 700px) {
+            padding: 0;
+        }
     }
 
     &__link {
