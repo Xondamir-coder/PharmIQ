@@ -80,6 +80,7 @@ body {
 }
 
 .header {
+  overflow: hidden;
   width: 100%;
   background-color: #fff;
   position: fixed;
@@ -151,22 +152,22 @@ body {
 .nav__link:link, .nav__link:visited {
   font-size: 1.8rem;
   text-decoration: none;
-  color: #2D3232;
+  color: #2d3232;
   display: inline-block;
   transition: all 0.3s;
 }
 .nav__link:link:hover, .nav__link:visited:hover {
   text-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.433);
-  color: #4DB1B1;
+  color: #4db1b1;
   transform: translateY(-3px);
 }
 
 .color-blue {
-  color: #4DB1B1 !important;
+  color: #4db1b1 !important;
 }
 
 .btn {
-  background-color: #FF736E;
+  background-color: #ff736e;
   font-size: 1.5rem;
   font-weight: 300;
   border-radius: 10rem;
@@ -259,7 +260,7 @@ body {
   position: fixed;
   top: 2.1rem;
   right: 1.4rem;
-  background-image: radial-gradient(#4DB1B1, #1c6262);
+  background-image: radial-gradient(#4db1b1, #1c6262);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
 }
@@ -374,6 +375,7 @@ body {
 }
 
 .footer {
+  overflow: hidden;
   background-image: url(../img/footer-wave.svg);
   background-position: 0% 103%;
   background-repeat: no-repeat;
@@ -526,7 +528,7 @@ body {
 .form__btn {
   border: none;
   border-radius: 1rem;
-  background-color: #F24D5D;
+  background-color: #f24d5d;
   color: #fff;
   width: 14rem;
   transform: translateX(-2rem);
@@ -545,7 +547,7 @@ body {
   position: absolute;
   width: 2rem;
   height: 2rem;
-  fill: #F24D5D;
+  fill: #f24d5d;
   z-index: 100;
 }
 
@@ -724,7 +726,8 @@ body {
 }
 
 .partners {
-  background-color: #F5F5F5;
+  overflow: hidden;
+  background-color: #f5f5f5;
   grid-column: 1/-1;
   padding: 5rem;
   position: relative;
@@ -807,6 +810,7 @@ body {
 }
 
 .team {
+  overflow: hidden;
   padding: 3rem;
   background-image: linear-gradient(rgba(255, 255, 255, 0.132), rgba(31, 125, 137, 0.2)), url(../img/team.jfif);
   background-size: cover;
@@ -841,6 +845,7 @@ body {
 }
 
 .staff {
+  overflow: hidden;
   background-color: #fff;
   grid-column: 1/-1;
   padding: 7rem 0;
@@ -859,7 +864,7 @@ body {
 }
 .staff__portrait {
   transform: translateX(2rem) translateY(1rem);
-  background-color: #45A9D3;
+  background-color: #45a9d3;
   width: 28rem;
   height: 35rem;
 }
@@ -877,11 +882,11 @@ body {
   font-size: 2rem;
   margin-top: 3rem;
   text-align: center;
-  color: #2D3232;
+  color: #2d3232;
 }
 .staff__role {
   text-align: center;
-  color: #677A8B;
+  color: #677a8b;
   margin-top: 1rem;
 }
 .staff__text {
@@ -920,6 +925,7 @@ body {
 }
 
 .kits {
+  overflow: hidden;
   background-color: rgba(77, 177, 177, 0.1019607843);
   grid-column: 1/-1;
   padding: 4rem;
@@ -1013,6 +1019,7 @@ body {
 }
 
 .about {
+  overflow: hidden;
   background-color: #007382;
   grid-column: 1/-1;
   display: flex;

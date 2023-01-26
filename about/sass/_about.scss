@@ -1,88 +1,88 @@
 .about {
-    background-color: $primary;
-    grid-column: 1/-1;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
+	overflow: hidden;
+	background-color: $primary;
+	grid-column: 1/-1;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 10rem 2rem;
+	position: relative;
 
-    padding: 10rem 2rem;
-    position: relative;
+	@media only screen and (max-width: $bp-large) {
+		margin-top: 5rem;
+		flex-wrap: nowrap;
+	}
 
-    @media only screen and (max-width: $bp-large) {
-        margin-top: 5rem;
-        flex-wrap: nowrap;
-    }
+	@media only screen and (max-width: $bp-medium) {
+		margin-top: 12rem;
+		padding: 3rem 2rem;
+		flex-wrap: wrap;
+	}
 
-    @media only screen and (max-width: $bp-medium) {
-        margin-top: 12rem;
-        padding: 3rem 2rem;
-        flex-wrap: wrap;
-    }
+	&__box {
+		width: 50rem;
+	}
 
-    &__box {
-        width: 50rem;
-    }
+	&__img-2 {
+		height: 10rem;
+		width: 15rem;
+		position: absolute;
+		top: 83.5%;
+		left: -0.5%;
 
-    &__img-2 {
-        height: 10rem;
-        width: 15rem;
-        position: absolute;
-        top: 83.5%;
-        left: -.5%;
+		@media only screen and (max-width: $bp-large) {
+			top: 80%;
+		}
 
-        @media only screen and (max-width: $bp-large) {
-            top: 80%;
-        }
+		@media only screen and (max-width: $bp-medium) {
+			height: 6rem;
+			width: 10rem;
+			top: 80.5%;
+		}
 
-        @media only screen and (max-width: $bp-medium) {
-            height: 6rem;
-            width: 10rem;
-            top: 80.5%;
-        }
+		@media only screen and (max-width: 624px) {
+			height: 9rem;
+			width: 13rem;
+			top: 81.8%;
+		}
 
-        @media only screen and (max-width: 624px) {
-            height: 9rem;
-            width: 13rem;
-            top: 81.8%;
-        }
+		@media only screen and (max-width: $bp-small) {
+			height: 6rem;
+			width: 10rem;
+			top: 88.3%;
+		}
+	}
 
-        @media only screen and (max-width: $bp-small) {
-            height: 6rem;
-            width: 10rem;
-            top: 88.3%;
-        }
-    }
+	&__img {
+		height: 40rem;
+		width: 45rem;
+		transition: transform 0.3s;
 
-    &__img {
-        height: 40rem;
-        width: 45rem;
-        transition: transform .3s;
+		&:hover {
+			transform: scale(1.04);
+		}
 
-        &:hover {
-            transform: scale(1.04);
-        }
+		@media only screen and (max-width: $bp-large) {
+			height: 30rem;
+			width: 30rem;
+		}
 
-        @media only screen and (max-width: $bp-large) {
-            height: 30rem;
-            width: 30rem;
-        }
+		@media only screen and (max-width: $bp-medium) {
+			height: 25rem;
+			width: 25rem;
+		}
+	}
 
-        @media only screen and (max-width: $bp-medium) {
-            height: 25rem;
-            width: 25rem;
-        }
-    }
-
-    &__text {
-        color: $white;
-    }
+	&__text {
+		color: $white;
+	}
 }
 
 .heading-1 {
-    color: $white;
-    line-height: 2.9rem;
-    font: Montserrat;
-    font-weight: 500;
-    margin-bottom: 2rem;
+	color: $white;
+	line-height: 2.9rem;
+	font: Montserrat;
+	font-weight: 500;
+	margin-bottom: 2rem;
 }

@@ -1,33 +1,33 @@
 .team {
-    padding: 3rem;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.132), rgba(#1f7d89, .2)), url(../img/team.jfif);
-    background-size: cover;
-    background-position: center;
-    grid-column: 1/-1;
-    overflow: hidden;
-    display: grid;
-    row-gap: 2rem;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: max-content;
+	overflow: hidden;
+	padding: 3rem;
+	background-image: linear-gradient(rgba(255, 255, 255, 0.132), rgba(#1f7d89, 0.2)), url(../img/team.jfif);
+	background-size: cover;
+	background-position: center;
+	grid-column: 1/-1;
+	overflow: hidden;
+	display: grid;
+	row-gap: 2rem;
+	justify-items: center;
+	align-items: center;
+	align-content: center;
+	grid-template-columns: 1fr;
+	grid-template-rows: max-content;
 
+	&__box {
+		width: 50rem;
 
-    &__box {
-        width: 50rem;
+		@media only screen and (max-width: $bp-medium) {
+			margin: 0 0 1.999rem 1.99999rem;
+		}
 
-        @media only screen and (max-width: $bp-medium) {
-            margin: 0 0 1.999rem 1.99999rem;
-        }
+		@media only screen and (max-width: 500px) {
+			width: auto;
+		}
+	}
 
-        @media only screen and (max-width: 500px) {
-            width: auto;
-        }
-    }
-
-    &__text {
-        color: $white;
-        line-height: 3.5rem;
-    }
+	&__text {
+		color: $white;
+		line-height: 3.5rem;
+	}
 }
