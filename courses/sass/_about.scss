@@ -1,0 +1,81 @@
+.about {
+	overflow: hidden;
+	grid-column: 1/-1;
+	padding-top: 9rem;
+	color: $white;
+	background-color: $primary;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+
+	@media only screen and (max-width: $bp-large) {
+		padding-top: 13rem;
+	}
+	@media only screen and (max-width: 500px) {
+		justify-content: stretch;
+	}
+	&__container {
+		&--1 {
+			align-self: flex-end;
+			flex: 0 0 25%;
+
+			@media only screen and (max-width: $bp-large) {
+				flex: 0 0 0;
+			}
+			@media only screen and (max-width: 624px) {
+				order: 2;
+			}
+			@media only screen and (max-width: 500px) {
+				order: 1;
+			}
+		}
+		&--2 {
+			width: 50rem;
+			text-align: center;
+
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			& p {
+				width: 40rem;
+			}
+			@media only screen and (max-width: 624px) {
+				flex: 1;
+			}
+			@media only screen and (max-width: 500px) {
+				padding: 5rem;
+			}
+			@media only screen and (max-width: $bp-small) {
+				width: 100%;
+			}
+		}
+	}
+	&__img {
+		&--1 {
+			width: 20rem;
+			@media only screen and (max-width: $bp-large) {
+				width: 10rem;
+			}
+		}
+		&--2 {
+			width: 45rem;
+			padding: 5rem;
+			@media only screen and (max-width: $bp-largest) {
+				padding-top: 0;
+				padding-bottom: 4rem;
+				padding-left: 0;
+				padding-right: 0;
+				max-width: 25%;
+			}
+			@media only screen and (max-width: 624px) {
+				max-width: 38%;
+			}
+			@media only screen and (max-width: 500px) {
+				min-width: 50%;
+				order: 2;
+			}
+		}
+	}
+}

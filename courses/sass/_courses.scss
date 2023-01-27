@@ -1,0 +1,139 @@
+.courses {
+	overflow: hidden;
+	grid-column: 1/-1;
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+
+	color: $white;
+	background-color: #96d2f5;
+	&__container {
+		&--1 {
+			text-align: center;
+			padding: 2rem;
+		}
+		&--2 {
+			color: #000;
+			width: 100%;
+			padding: 2rem 0;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+		}
+		&--3 {
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+			padding: 5rem;
+			@media only screen and (max-width: 500px) {
+				padding: 0 0 15rem 0;
+				justify-content: space-around;
+			}
+		}
+	}
+	&__box {
+		box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 15%);
+		background-image: linear-gradient(to right, #fff 0%, #fff 55%, transparent 55%);
+
+		display: grid;
+		grid-template-columns: 19rem 15.5rem;
+		grid-template-rows: 18rem 9rem;
+		&--text {
+			align-self: center;
+			font-size: 1.4rem;
+			padding: 1rem;
+		}
+		@media only screen and (max-width: $bp-large) {
+			margin-bottom: 5rem;
+		}
+	}
+	&__text {
+		color: $white;
+		align-self: center;
+		justify-self: center;
+		font-size: 2rem;
+		padding: 1rem;
+		grid-column: 2 / span 1;
+		grid-row: 2 / span 1;
+	}
+	&__img {
+		grid-column: 2 / span 1;
+		grid-row: 1/2;
+		align-self: center;
+		justify-self: center;
+		@media only screen and (max-width: $bp-medium) {
+			width: 10rem;
+		}
+		&--2 {
+			position: absolute;
+			width: 12rem;
+			padding: 1.5rem 2rem;
+			top: 76%;
+			left: 1%;
+			@media only screen and (max-width: $bp-large) {
+				top: 87%;
+			}
+			@media only screen and (max-width: 624px) {
+				width: 8rem;
+				top: 92%;
+			}
+			@media only screen and (max-width: 500px) {
+				width: 10rem;
+				top: 93%;
+			}
+		}
+	}
+
+	&__link:link,
+	&__link:visited {
+		text-decoration: none;
+		color: $white;
+		font-family: 'Nunito', sans-serif;
+		font-size: 1.8rem;
+		transition: all 0.3s;
+	}
+}
+.pink {
+	background-color: #ff736e;
+}
+.blue {
+	background-color: #4b96dc;
+}
+.green-box {
+	background-color: #4db1b1;
+}
+.green {
+	background-color: #4db1b1;
+	&:hover {
+		background-color: #308f8f;
+	}
+}
+.yellow {
+	background-color: #f2c94c;
+	&:hover {
+		background-color: #e8b621;
+	}
+}
+.black {
+	color: #000;
+}
+.button {
+	padding: 1.5rem 3rem;
+	border: none;
+	border-radius: 1.2rem 0;
+	margin-right: 5rem;
+	transition: all 0.3s;
+	@media only screen and (max-width: 500px) {
+		margin-right: 0;
+		padding: 1.5rem 2rem;
+		margin-bottom: 3rem;
+	}
+	&:hover .courses__link {
+		letter-spacing: 2px;
+	}
+}

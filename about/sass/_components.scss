@@ -1,0 +1,34 @@
+//VARIABLES
+$primary: #007382;
+$primary-dark: #0d4e57;
+$primary-light: #1f7d89;
+$white: #fff;
+
+$bp-largest: 75em; //1200px
+$bp-larger: 65em; //1040px
+$bp-large: 56.25em; //900px
+$bp-medium: 45em; //720px
+$bp-small: 20em;
+
+//ANIMATION
+@keyframes pulsate {
+	0% {
+		transform: scale(1);
+		box-shadow: none;
+	}
+
+	50% {
+		transform: scale(1.05);
+		box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.15);
+	}
+
+	100% {
+		transform: scale(1);
+		box-shadow: none;
+	}
+}
+
+::selection {
+	background-color: $primary-light;
+	color: $white;
+}
