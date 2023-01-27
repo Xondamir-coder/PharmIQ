@@ -1060,8 +1060,8 @@ body {
   }
 }
 .reasons__icon {
-  transform: translateX(-2rem);
   width: 75%;
+  justify-self: center;
 }
 .reasons__text {
   line-height: 3rem;
