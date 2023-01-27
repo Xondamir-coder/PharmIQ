@@ -115,100 +115,6 @@
 	}
 }
 
-// .menu {
-
-//     @media only screen and (min-width: $bp-large) {
-//         display: none;
-//     }
-
-//     &__list {
-//         position: fixed;
-//         height: 100vh;
-//         width: 100%;
-//     }
-
-//     &__checkbox {
-//         display: none;
-//         position: absolute;
-//         top: -23%;
-//         left: 90%;
-//         // &:checked~.menu__button .menu__icon,
-//         // &:checked~.menu__button .menu__icon::before,
-//         // &:checked~.menu__button .menu__icon::after {
-//         //     background-color: $white;
-//         // }
-
-//         &:checked~.menu__background {
-//             transform: scale(80);
-//         }
-//     }
-
-//     &__icon {
-//         position: absolute;
-//         top: -25%;
-//         left: 92%;
-//         transform: translate(-2.2rem, 1rem);
-//         display: inline-block;
-//         height: 2px;
-//         width: 2.5rem;
-//         background-color: #333;
-
-//         @media only screen and (max-width: $bp-small) {
-//             height: 1.2px;
-//         }
-
-//         &::before {
-//             width: 2rem;
-//             height: 2px;
-//             background-color: #333;
-//             display: inline-block;
-
-//             @media only screen and (max-width: $bp-small) {
-//                 height: 1.2px;
-//             }
-//         }
-
-//         &::after {
-//             width: 3.5rem;
-//             height: 2px;
-//             background-color: #333;
-//             display: inline-block;
-
-//             @media only screen and (max-width: $bp-small) {
-//                 height: 1.2px;
-//             }
-//         }
-
-//         &::before,
-//         &::after {
-//             content: "";
-//             position: absolute;
-//             left: 0;
-//             -webkit-transition: all .2s;
-//             transition: all .2s;
-//         }
-
-//         &::before {
-//             transform: translateY(.7rem);
-//         }
-
-//         &::after {
-//             transform: translateY(-.7rem);
-//         }
-//     }
-
-//     &__background {
-//         height: 6rem;
-//         width: 6rem;
-//         border-radius: 50%;
-//         background-color: cyan;
-//     }
-// }
-
-// .color-white {
-//     //color: $white !important;
-// }
-
 //NAVIGATION
 .navigation {
 	&__logo {
@@ -302,10 +208,7 @@
 	}
 
 	&__list {
-		// position: relative;
-		// top: 19%;
 		list-style: none;
-		// width: 100%;
 	}
 
 	&__item {
@@ -361,14 +264,6 @@
 		height: 2px;
 		background-color: black;
 		display: inline-block;
-		// &,
-		// &::before,
-		// &::after {
-		//     width: 3rem;
-		//     height: 2px;
-		//     background-color: black;
-		//     display: inline-block;
-		// }
 
 		&::before {
 			width: 3.5rem;
@@ -400,28 +295,6 @@
 			top: 0.8rem;
 		}
 	}
-
-	// &__button:hover &__icon::before {
-	//     top: -1rem;
-	// }
-
-	// &__button:hover &__icon::after {
-	//     top: 1rem;
-	// }
-
-	// &__checkbox:checked+&__button &__icon {
-	//     background-color: transparent;
-	// }
-
-	// &__checkbox:checked+&__button &__icon::before {
-	//     top: 0;
-	//     transform: rotate(135deg);
-	// }
-
-	// &__checkbox:checked+&__button &__icon::after {
-	//     top: 0;
-	//     transform: rotate(-135deg);
-	// }
 }
 
 .t-left {

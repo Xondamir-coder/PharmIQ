@@ -994,7 +994,6 @@ body {
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
-  transition: transform 0.4s;
 }
 
 .heading-3 {
