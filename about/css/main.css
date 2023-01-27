@@ -482,6 +482,7 @@ body {
 @media only screen and (max-width: 56.25em) {
   .form__input {
     width: 18rem;
+    height: 5rem;
   }
 }
 @media only screen and (max-width: 45em) {
@@ -541,6 +542,11 @@ body {
   font-family: "Nunito", sans-serif;
   font-weight: 600;
   letter-spacing: 0.5px;
+}
+@media only screen and (max-width: 56.25em) {
+  .form__btn {
+    height: 5rem;
+  }
 }
 .form__btn span {
   margin-left: 3px;

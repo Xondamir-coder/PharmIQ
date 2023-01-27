@@ -36,6 +36,7 @@
 }
 
 .header {
+  font-family: "Nunito", sans-serif;
   overflow: hidden;
   width: 100%;
   background-color: #fff;
@@ -148,6 +149,7 @@
 .register__link {
   text-decoration: none;
   color: #fff;
+  padding: 1.5rem;
 }
 
 .navigation__logo {
@@ -173,6 +175,7 @@
   align-items: center;
 }
 .navigation__content {
+  font-family: "Nunito", sans-serif;
   padding-top: 9rem;
   width: 100%;
   align-items: flex-start;
@@ -367,6 +370,7 @@
   }
 }
 .footer__text {
+  font-family: "Nunito", sans-serif;
   font-size: 1.7rem;
   font-weight: 400;
   line-height: 2.8rem;
@@ -378,11 +382,12 @@
 }
 
 .heading-6 {
-  font-family: "Jost", sans-serif;
-  font-size: 3rem;
+  font-family: Jost;
+  font-size: 3.9rem;
   font-weight: 600;
   line-height: 4.2rem;
   margin-bottom: 2rem;
+  letter-spacing: 2px;
 }
 @media only screen and (max-width: 45em) {
   .heading-6 {
@@ -392,7 +397,8 @@
 }
 
 .heading-7 {
-  font-weight: 800;
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
   font-size: 2rem;
   padding-bottom: 2rem;
   line-height: 5rem;
@@ -482,6 +488,7 @@
   }
 }
 .form__btn {
+  cursor: pointer;
   border: none;
   border-radius: 1rem;
   background-color: #f24d5d;
@@ -522,6 +529,7 @@
   list-style: none;
 }
 .box__link {
+  font-family: "Nunito", sans-serif;
   text-decoration: none;
   color: #fff;
   padding: 0.5rem 0;
@@ -548,6 +556,7 @@
   width: 35rem;
 }
 .box--1__text {
+  font-family: Jost;
   display: inline-block;
   font-size: 1.8rem;
   font-weight: 500;
@@ -635,6 +644,7 @@
 
 .box--4 {
   width: 30rem;
+  font-family: "Nunito", sans-serif;
 }
 @media only screen and (max-width: 56.25em) {
   .box--4 {

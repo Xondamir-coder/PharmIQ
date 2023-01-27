@@ -99,6 +99,7 @@
 
 		@media only screen and (max-width: $bp-large) {
 			width: 18rem;
+			height: 5rem;
 		}
 
 		@media only screen and (max-width: $bp-medium) {
@@ -150,7 +151,9 @@
 		font-family: 'Nunito', sans-serif;
 		font-weight: 600;
 		letter-spacing: 0.5px;
-
+		@media only screen and (max-width: $bp-large) {
+			height: 5rem;
+		}
 		& span {
 			margin-left: 3px;
 			transition: margin-left 0.2s;
@@ -218,7 +221,6 @@
 
 .box--1 {
 	width: 35rem;
-
 	&__text {
 		font-family: Jost;
 		display: inline-block;
