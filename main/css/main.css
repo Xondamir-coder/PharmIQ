@@ -371,8 +371,8 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: -webkit-max-content repeat(8, 100vh);
-  grid-template-rows: max-content repeat(8, 100vh);
+  grid-template-rows: -webkit-max-content repeat(4, 100vh) -webkit-max-content repeat(3, 100vh);
+  grid-template-rows: max-content repeat(4, 100vh) max-content repeat(3, 100vh);
   grid-template-columns: repeat(4, 1fr);
 }
 
@@ -554,12 +554,15 @@ body {
 }
 
 .section--5 {
+  padding-bottom: 10rem;
   overflow: hidden;
   grid-column: 1/-1;
 }
 .section--5__box {
   padding-top: 10rem;
-  height: 75vh;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   display: flex;
   gap: 3rem;
   flex-wrap: wrap;
@@ -567,6 +570,7 @@ body {
   align-items: center;
 }
 .section--5__wrap {
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -579,6 +583,8 @@ body {
 .section--5__text {
   text-transform: capitalize;
   padding: 0 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid rgba(45, 50, 50, 0.1254901961);
   font-family: "Nunito", sans-serif;
   font-size: 1.7rem;
   font-weight: 400;
@@ -590,10 +596,20 @@ body {
   height: 25rem;
 }
 
-.button:link,
-.button:visited {
-  padding: 4rem;
+.button:link, .button:visited {
+  padding: 2rem;
   color: #000;
+}
+.button span {
+  transition: all 0.2s;
+}
+.button:hover span {
+  margin-left: 4px;
+  color: #4b96dc;
+}
+.button:hover {
+  color: #4b96dc;
+  text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.155);
 }
 
 a {

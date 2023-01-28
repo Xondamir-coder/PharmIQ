@@ -123,11 +123,12 @@
 	}
 }
 .section--5 {
+	padding-bottom: 10rem;
 	overflow: hidden;
 	grid-column: 1/-1;
 	&__box {
 		padding-top: 10rem;
-		height: 75vh;
+		height: max-content;
 		display: flex;
 		gap: 3rem;
 		flex-wrap: wrap;
@@ -135,6 +136,7 @@
 		align-items: center;
 	}
 	&__wrap {
+		padding: 1rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -147,6 +149,8 @@
 	&__text {
 		text-transform: capitalize;
 		padding: 0 2rem;
+		padding-bottom: 2rem;
+		border-bottom: 2px solid #2d323220;
 		font-family: 'Nunito', sans-serif;
 		font-size: 1.7rem;
 		font-weight: 400;
@@ -158,10 +162,23 @@
 		height: 25rem;
 	}
 }
-.button:link,
-.button:visited {
-	padding: 4rem;
-	color: #000;
+.button {
+	&:link,
+	&:visited {
+		padding: 2rem;
+		color: #000;
+	}
+	& span {
+		transition: all 0.2s;
+	}
+	&:hover span {
+		margin-left: 4px;
+		color: #4b96dc;
+	}
+	&:hover {
+		color: #4b96dc;
+		text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.155);
+	}
 }
 a {
 	text-decoration: none;
