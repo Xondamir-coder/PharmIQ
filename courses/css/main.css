@@ -124,6 +124,7 @@
 }
 
 .btn {
+  text-decoration: none;
   background-color: #ff736e;
   font-size: 1.5rem;
   font-weight: 300;
@@ -962,6 +963,7 @@ body {
   }
 }
 .courses__link:link, .courses__link:visited {
+  padding: 2rem;
   text-decoration: none;
   color: #fff;
   font-family: "Nunito", sans-serif;
