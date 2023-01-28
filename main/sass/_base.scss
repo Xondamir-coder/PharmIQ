@@ -33,7 +33,7 @@ body {
 
 .container {
 	display: grid;
-	grid-template-rows: max-content repeat(4, 100vh) max-content repeat(3, 100vh);
+	grid-template-rows: max-content repeat(4, 100vh) max-content 100vh max-content repeat(2, 100vh);
 	grid-template-columns: repeat(4, 1fr);
 }
 .green {
@@ -62,9 +62,12 @@ body {
 .padding-0 {
 	padding: 0;
 }
+.no-pd-top {
+	padding: 0 2rem 2rem 2rem !important;
+}
 .pd-left {
 	padding: 0;
-	padding-left: 10rem;
+	padding-left: 8rem;
 }
 .heading-3 {
 	padding: 2rem;
@@ -73,4 +76,10 @@ body {
 	line-height: 3rem;
 	letter-spacing: 0.0015em;
 	text-transform: capitalize;
+}
+.heading-4 {
+	font-family: 'Jost', sans-serif;
+	font-size: 2.3rem;
+	font-weight: 600;
+	line-height: 2.8rem;
 }

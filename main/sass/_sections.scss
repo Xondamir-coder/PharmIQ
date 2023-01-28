@@ -1,6 +1,8 @@
-.section--1 {
+section {
 	grid-column: 1/-1;
 	overflow: hidden;
+}
+.section--1 {
 	background-image: url(../img/banner.svg);
 	background-repeat: no-repeat;
 	background-position: 100% 100%;
@@ -36,8 +38,6 @@
 	}
 }
 .section--2 {
-	overflow: hidden;
-	grid-column: 1/-1;
 	background-image: url(../img/iPhone_14.svg);
 	background-repeat: no-repeat;
 	background-position: 90% 53%;
@@ -64,8 +64,6 @@
 }
 
 .section--4 {
-	overflow: hidden;
-	grid-column: 1/-1;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -83,7 +81,7 @@
 			height: 40rem;
 			background-color: #2d3232be;
 			& span {
-				font-family: graphik;
+				font-family: Jost;
 				font-size: 8rem;
 			}
 			&__button {
@@ -124,8 +122,6 @@
 }
 .section--5 {
 	padding-bottom: 10rem;
-	overflow: hidden;
-	grid-column: 1/-1;
 	&__box {
 		padding-top: 10rem;
 		height: max-content;
@@ -162,6 +158,79 @@
 		height: 25rem;
 	}
 }
+
+.section--6 {
+	&__container {
+		padding: 10rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__box {
+		width: 50%;
+
+		display: flex;
+		flex-direction: column;
+	}
+	&__wrap {
+		display: flex;
+		gap: 4rem;
+		padding: 2rem 0;
+	}
+	&__text {
+		font-family: 'Nunito', sans-serif;
+		line-height: 2.8rem;
+	}
+	&__img {
+		align-self: center;
+		width: 20rem;
+	}
+}
+.section--7 {
+	&__container {
+		padding: 8rem;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		gap: 4rem;
+		height: 100%;
+	}
+	&__box {
+		box-shadow: 0px 4px 35px rgba(4, 59, 80, 0.1);
+		width: 37rem;
+		display: flex;
+		flex-direction: column;
+	}
+	&__preview {
+		background-color: rgba(45, 50, 50, 0.7450980392);
+		height: 25rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-family: Jost;
+		font-size: 5rem;
+	}
+}
+.section--8 {
+}
+.no-border {
+	border: none;
+}
+.align-start {
+	align-self: flex-start;
+}
+.small {
+	font-size: 1.6rem;
+	line-height: 1.5rem;
+}
+.big {
+	font-size: 1.8rem;
+	line-height: 2.8rem;
+}
+a {
+	text-decoration: none;
+}
 .button {
 	&:link,
 	&:visited {
@@ -179,27 +248,4 @@
 		color: #4b96dc;
 		text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.155);
 	}
-}
-a {
-	text-decoration: none;
-}
-.section--6 {
-	grid-column: 1/-1;
-}
-.section--7 {
-	grid-column: 1/-1;
-}
-.section--8 {
-	grid-column: 1/-1;
-}
-.align-start {
-	align-self: flex-start;
-}
-.small {
-	font-size: 1.6rem;
-	line-height: 1.5rem;
-}
-.big {
-	font-size: 1.8rem;
-	line-height: 2.8rem;
 }
