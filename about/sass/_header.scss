@@ -213,6 +213,8 @@
 
 	&__list {
 		list-style: none;
+		transition: all 0.7s;
+		transform: translateX(-100rem);
 	}
 
 	&__item {
@@ -250,7 +252,9 @@
 	&__checkbox:checked ~ &__background {
 		transform: scale(80);
 	}
-
+	&__checkbox:checked ~ &__nav &__content &__list {
+		transform: translateX(0);
+	}
 	&__checkbox:checked ~ &__nav {
 		opacity: 1;
 		width: 100%;
