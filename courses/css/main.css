@@ -241,6 +241,8 @@
 }
 .navigation__list {
   list-style: none;
+  transition: all 0.7s;
+  transform: translateX(-100rem);
 }
 .navigation__item {
   padding: 6px;
@@ -271,6 +273,9 @@
 }
 .navigation__checkbox:checked ~ .navigation__background {
   transform: scale(80);
+}
+.navigation__checkbox:checked ~ .navigation__nav .navigation__content .navigation__list {
+  transform: translateX(0);
 }
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
