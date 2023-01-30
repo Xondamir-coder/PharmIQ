@@ -875,6 +875,7 @@ body {
   }
 }
 .section--9__list {
+  padding-top: 3rem;
   list-style: none;
   font-family: "Nunito", sans-serif;
   font-size: 1.7rem;
@@ -882,7 +883,7 @@ body {
   letter-spacing: 0.005em;
 }
 .section--9__item {
-  padding-bottom: 0.7rem;
+  padding-bottom: 1.5rem;
   display: flex;
   gap: 2rem;
 }

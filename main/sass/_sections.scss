@@ -373,6 +373,7 @@
 		}
 	}
 	&__list {
+		padding-top: 3rem;
 		list-style: none;
 		font-family: 'Nunito', sans-serif;
 		font-size: 1.7rem;
@@ -380,7 +381,7 @@
 		letter-spacing: 0.005em;
 	}
 	&__item {
-		padding-bottom: 0.7rem;
+		padding-bottom: 1.5rem;
 		display: flex;
 		gap: 2rem;
 		& a {
