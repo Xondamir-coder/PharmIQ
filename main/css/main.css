@@ -416,6 +416,11 @@ body {
   padding-left: 8rem;
 }
 
+.pd-bot {
+  padding: 0;
+  padding-bottom: 2rem;
+}
+
 .heading-3 {
   padding: 2rem;
   font-size: 2.3rem;
@@ -438,7 +443,6 @@ body {
   font-size: 23px;
   line-height: 34px;
   letter-spacing: 0.0015em;
-  padding-bottom: 2rem;
 }
 
 .heading-6 {
@@ -449,11 +453,6 @@ body {
   line-height: 3rem;
   letter-spacing: 0.005em;
   text-transform: capitalize;
-}
-
-section {
-  grid-column: 1/-1;
-  overflow: hidden;
 }
 
 .section--1 {
@@ -778,37 +777,6 @@ section {
     gap: 4rem;
   }
 }
-.section--9__container--3 {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: space-between;
-  background-color: #007382;
-  color: #fff;
-  padding: 3rem 5rem;
-}
-.section--9__languages {
-  font-family: sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-.section--9__languages span {
-  color: rgba(255, 255, 255, 0.4);
-}
-.section--9__terms {
-  display: flex;
-  gap: 1.5rem;
-}
-.section--9__terms__link {
-  color: #fff;
-  transition: all 0.3s;
-}
-.section--9__terms__link:hover {
-  transform: translateY(-3px);
-  color: #15c1d8;
-}
 .section--9__input {
   outline: none;
   width: 36rem;
@@ -952,23 +920,41 @@ section {
   width: 4rem;
   height: 3rem;
 }
-
-.no-border {
-  border: none;
+.section--9__container--3 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  background-color: #007382;
+  color: #fff;
+  padding: 3rem 5rem;
+}
+.section--9__terms {
+  display: flex;
+  gap: 1.5rem;
+}
+.section--9__terms__link {
+  color: #fff;
+  transition: all 0.3s;
+}
+.section--9__terms__link:hover {
+  transform: translateY(-3px);
+  color: #15c1d8;
+}
+.section--9__languages {
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.section--9__languages span {
+  color: rgba(255, 255, 255, 0.4);
 }
 
-.align-start {
-  align-self: flex-start;
-}
-
-.small {
-  font-size: 1.6rem;
-  line-height: 1.5rem;
-}
-
-.big {
-  font-size: 1.8rem;
-  line-height: 2.8rem;
+section {
+  grid-column: 1/-1;
+  overflow: hidden;
 }
 
 a {
