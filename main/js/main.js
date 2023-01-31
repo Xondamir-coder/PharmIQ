@@ -73,5 +73,22 @@ function slide_sections(e) {
 		}
 	}
 }
+
+document.addEventListener("keydown", (event) => {
+	if (event.isComposing || event.keyCode === 39) {
+		slide_sections(100)// right
+	}
+	else if (event.isComposing || event.keyCode === 38) {
+		slide_sections(-100) // top
+	}
+	else if (event.isComposing || event.keyCode === 37) {
+		slide_sections(-100) // left
+	}
+	else if (event.isComposing || event.keyCode === 40) {
+		slide_sections(100) // bottom
+	}
+
+});
+
 document.body.ontouchstart = start_f;
 document.body.ontouchend = end_f;
