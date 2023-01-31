@@ -1,11 +1,21 @@
 *,
 *::before,
 *::after {
-	margin: 0;
 	padding: 0;
+	margin: 0;
 	box-sizing: inherit;
 }
 
+body {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+
+	overflow: hidden;
+	font-size: 1.6rem;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	line-height: 1.6;
+}
 html {
 	box-sizing: border-box;
 	font-size: 62.5%; //1rem = 10px, 62.5% of 16px = 10px
@@ -23,20 +33,20 @@ html {
 		font-size: 40%;
 	}
 }
-
-body {
-	font-size: 1.6rem;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 300;
-	line-height: 1.6;
-	overflow: hidden;
+.show-me {
+	top: 0vh;
+	left: 0;
+}
+.go-up {
+	top: -130vh;
+	left: 0%;
+}
+.go-down {
+	top: 100vh;
+	left: 0%;
+	z-index: 0;
 }
 
-// .container {
-// 	display: grid;
-// 	grid-template-rows: max-content repeat(4, 100vh) max-content 100vh max-content repeat(2, 100vh);
-// 	grid-template-columns: repeat(4, 1fr);
-// }
 .green {
 	background-color: #007382;
 }
@@ -59,6 +69,9 @@ body {
 	letter-spacing: 0.0025em;
 	padding-left: 8rem;
 	padding-top: 8rem;
+	@media only screen and (max-width: 481px) {
+		padding-left: 3rem;
+	}
 }
 .padding-0 {
 	padding: 0;
@@ -103,4 +116,10 @@ body {
 	line-height: 3rem;
 	letter-spacing: 0.005em;
 	text-transform: capitalize;
+}
+.align-start {
+	align-self: flex-start;
+}
+.motivation-icon {
+	width: 20% !important;
 }
