@@ -1,2 +1,2 @@
 # PharmIQ
- Website by me for PharmIQ
+Website by Xondamir Nazrullayev for PharmIQ
