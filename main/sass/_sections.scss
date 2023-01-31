@@ -139,7 +139,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		gap: 4rem;
-		@media only screen and (max-height: 680px) {
+		@media only screen and (max-height: 820px) {
 			flex-wrap: nowrap;
 			gap: 1rem;
 		}
@@ -213,6 +213,9 @@
 		}
 		@media only screen and (max-height: 800px) {
 			gap: 0;
+		}
+		@media only screen and (max-width: 481px) {
+			padding: 2rem;
 		}
 	}
 	&__box {

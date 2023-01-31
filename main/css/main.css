@@ -509,7 +509,7 @@
   flex-wrap: wrap;
   gap: 4rem;
 }
-@media only screen and (max-height: 680px) {
+@media only screen and (max-height: 820px) {
   .section--4__wrap {
     flex-wrap: nowrap;
     gap: 1rem;
@@ -596,6 +596,11 @@
 @media only screen and (max-height: 800px) {
   .section--6__container {
     gap: 0;
+  }
+}
+@media only screen and (max-width: 481px) {
+  .section--6__container {
+    padding: 2rem;
   }
 }
 .section--6__box {
