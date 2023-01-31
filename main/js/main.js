@@ -45,7 +45,7 @@ function start_f(event) {
 }
 function end_f(event) {
 	end = event.changedTouches[0].clientY;
-	if (start - end > 400 || start - end < -400) {
+	if (start - end > 50 || start - end < -50) {
 		slide_sections(start - end);
 	}
 }

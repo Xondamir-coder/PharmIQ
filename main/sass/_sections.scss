@@ -9,7 +9,7 @@
 	align-items: center;
 	@media only screen and (max-width: $bp-large) {
 		align-items: center;
-		background-size: 75%;
+		background-size: 70%;
 	}
 	@media only screen and (max-width: $bp-medium) {
 		background-size: 90%;
@@ -18,8 +18,7 @@
 		background-size: 100%;
 	}
 	@media only screen and (max-height: 680px) {
-		margin-top: 20rem;
-		background-size: 85%;
+		background-size: 70%;
 	}
 	&__container {
 		padding-left: 6rem;
@@ -87,6 +86,9 @@
 		@media only screen and (max-width: $bp-largest) {
 			padding-top: 7rem;
 		}
+		@media only screen and (max-height: 680px) {
+			gap: 2rem;
+		}
 	}
 	&__box {
 		&--1 {
@@ -120,6 +122,11 @@
 			@media only screen and (max-width: $bp-largest) {
 				width: 80%;
 			}
+			@media only screen and (max-height: 680px) {
+				padding: 10px;
+				width: 100%;
+				gap: 1rem;
+			}
 		}
 	}
 	&__text {
@@ -132,6 +139,10 @@
 		display: flex;
 		flex-wrap: wrap;
 		gap: 4rem;
+		@media only screen and (max-height: 680px) {
+			flex-wrap: nowrap;
+			gap: 1rem;
+		}
 	}
 	&__list {
 		list-style: none;
@@ -200,6 +211,9 @@
 			flex-direction: column;
 			gap: 4rem;
 		}
+		@media only screen and (max-height: 800px) {
+			gap: 0;
+		}
 	}
 	&__box {
 		width: 50%;
@@ -227,6 +241,12 @@
 	&__img {
 		align-self: center;
 		width: 20rem;
+		@media only screen and (max-height: 800px) {
+			width: 50%;
+		}
+		@media only screen and (max-height: 689px) {
+			width: 30%;
+		}
 	}
 }
 
@@ -284,6 +304,9 @@
 		width: 73%;
 		display: flex;
 		justify-content: space-between;
+		@media only screen and (max-height: 680px), (max-width: 481px) {
+			width: 100%;
+		}
 		&:hover span {
 			color: #4b96dc;
 		}
@@ -330,11 +353,18 @@
 		@media only screen and (max-width: $bp-medium) {
 			padding-top: 4rem;
 		}
+		@media only screen and (max-width: 680px) {
+			padding-top: 1rem;
+		}
 	}
 	&__container--1 {
 		width: 80%;
 		padding-bottom: 5rem;
 		border-bottom: 2px solid #2d32321b;
+		@media only screen and (max-width: 680px) {
+			width: auto;
+			padding-bottom: 2rem;
+		}
 	}
 	//CONTAINER 2
 	&__container--2 {
@@ -346,6 +376,12 @@
 		@media only screen and (max-width: $bp-large) {
 			justify-content: center;
 			gap: 5rem;
+		}
+		@media only screen and (max-height: 680px) {
+			padding-top: 3rem;
+		}
+		@media only screen and (max-height: 680px) {
+			gap: 0;
 		}
 		& form {
 			width: 61rem;
@@ -363,6 +399,9 @@
 			display: flex;
 			flex-wrap: wrap;
 			gap: 4rem;
+		}
+		@media only screen and (max-height: 680px) {
+			gap: 0;
 		}
 	}
 
@@ -453,6 +492,10 @@
 	}
 	&__contacts {
 		padding-bottom: 3rem;
+		@media only screen and (max-height: 680px) {
+			padding-bottom: 1rem;
+			padding-top: 1rem;
+		}
 	}
 	&__nav {
 		display: flex;
@@ -492,6 +535,9 @@
 		background-color: $primary;
 		color: $white;
 		padding: 3rem 5rem;
+		@media only screen and (max-height: 680px) {
+			padding: 1rem;
+		}
 	}
 	&__terms {
 		display: flex;
@@ -520,7 +566,6 @@ section {
 	width: 100%;
 	overflow: hidden;
 	height: 100%;
-	z-index: 2;
 	transition: top 0.5s, z-index 0s;
 	position: absolute;
 	perspective: 1000px;
@@ -528,9 +573,9 @@ section {
 	background-position: 0 -70px;
 	background-size: cover;
 	background-repeat: no-repeat;
-	top: 0vh;
+	top: 100vh;
 	left: 0%;
-	z-index: 1;
+	z-index: 0;
 }
 
 a {
