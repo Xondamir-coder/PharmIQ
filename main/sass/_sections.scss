@@ -244,7 +244,7 @@
 	&__img {
 		align-self: center;
 		width: 20rem;
-		@media only screen and (max-height: 800px) {
+		@media only screen and (min-height: 800px) {
 			width: 50%;
 		}
 		@media only screen and (max-height: 689px) {

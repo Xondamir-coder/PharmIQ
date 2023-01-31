@@ -631,7 +631,7 @@
   align-self: center;
   width: 20rem;
 }
-@media only screen and (max-height: 800px) {
+@media only screen and (min-height: 800px) {
   .section--6__img {
     width: 50%;
   }
