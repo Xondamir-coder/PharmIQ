@@ -1,0 +1,134 @@
+.section--1 {
+	height: 80vh;
+	padding: 5rem;
+	background-color: $primary;
+	color: $white;
+	@media only screen and (max-width: $bp-medium) {
+		height: max-content;
+		margin-top: 11rem;
+		justify-content: center;
+		gap: 3rem;
+	}
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	&__right {
+		flex: 0 0 40%;
+		display: flex;
+		justify-content: center;
+	}
+	&__text {
+		font-size: 2.4rem;
+		font-weight: 500;
+		line-height: 2.9rem;
+		margin-left: 5px;
+	}
+	&__img {
+		width: clamp(20rem, 95%, 25.6rem);
+		height: 25.6rem;
+	}
+}
+
+.section--2 {
+	background-color: #e6f0f0;
+	padding-top: 4rem;
+	display: grid;
+	grid-template-columns: minmax(100px, 1fr) minmax(786px, 70vw) 1fr;
+	grid-template-rows: max-content 10rem;
+	@media only screen and (max-width: $bp-large) {
+		grid-template-columns: minmax(50px, 1fr) 70vw 1fr;
+	}
+	&__container--1 {
+		grid-row: 1/-1;
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+	}
+	&__container--2 {
+		grid-row: 1 / span 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		@media only screen and (max-width: $bp-large) {
+		}
+	}
+	&__box--1 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__box--2 {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 3rem;
+	}
+	&__wrap {
+		box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.05);
+		background-color: $white;
+		width: 27rem;
+		margin-top: 5rem;
+		display: flex;
+		flex-direction: column;
+		&__text {
+			padding: 1rem;
+			font-weight: 600;
+			font-size: 2rem;
+			line-height: 2.9rem;
+		}
+
+		&__link:link,
+		&__link:visited {
+			padding: 2rem 1rem;
+			transition: all 0.3s;
+			&:hover {
+				letter-spacing: 1px;
+				color: #4b96dc;
+			}
+		}
+	}
+	&__details {
+		padding: 1rem;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		&__class {
+			border-radius: 4px;
+			padding: 1rem;
+			display: inline-block;
+			background-color: #96d2f5;
+			color: #4b96dc;
+			font-size: 1.4rem;
+			font-weight: 700;
+			line-height: 1.7rem;
+		}
+		&__price {
+			display: flex;
+			align-items: center;
+			gap: 4px;
+			& span {
+				font-weight: 700;
+				font-size: 1.2rem;
+				line-height: 1.7rem;
+				color: #96d2f5;
+			}
+		}
+	}
+	&__text {
+		font-size: 1.8rem;
+		font-weight: 600;
+		line-height: 4rem;
+	}
+	&__img {
+		width: clamp(5rem, 60%, 10rem);
+		margin-bottom: 6rem;
+	}
+}
+section {
+	overflow: hidden;
+}
+a {
+	text-decoration: none;
+	color: #cdcdcd;
+}
