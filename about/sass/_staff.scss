@@ -10,14 +10,17 @@
 		margin-bottom: 3rem;
 	}
 
-	// display: grid;
-	// grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
-	// justify-items: center;
-	// justify-content: center;
 	&__container {
 		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-around;
+		justify-content: center;
+		@media only screen and (min-width: 600px) {
+			flex-wrap: wrap;
+			justify-content: space-around;
+			gap: 2rem;
+		}
+		@media only screen and (max-width: 600px) {
+			height: 65rem;
+		}
 	}
 
 	&__portrait {
@@ -28,15 +31,15 @@
 	}
 
 	&__box {
+		@media only screen and (max-width: 600px) {
+			position: absolute;
+		}
 		margin-top: 3rem;
 		height: 60rem;
 		width: 32rem;
 		box-shadow: 0 1rem 2.5rem rgba(rgb(69, 199, 202), 0.2);
-		transition: transform 0.3s;
-
-		&:hover {
-			transform: scale(1.06);
-		}
+		transition: all 0.4s;
+		border-radius: 1.5rem;
 	}
 
 	&__name {

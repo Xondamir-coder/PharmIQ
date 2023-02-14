@@ -1,18 +1,4 @@
 @charset "UTF-8";
-@-webkit-keyframes pulsate {
-  0% {
-    transform: scale(1);
-    box-shadow: none;
-  }
-  50% {
-    transform: scale(1.05);
-    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.15);
-  }
-  100% {
-    transform: scale(1);
-    box-shadow: none;
-  }
-}
 @keyframes pulsate {
   0% {
     transform: scale(1);
@@ -73,7 +59,6 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: repeat(4, -webkit-max-content);
   grid-template-rows: repeat(4, max-content);
   grid-template-columns: repeat(4, 1fr);
 }
@@ -89,6 +74,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+  top: 0;
 }
 @media only screen and (max-width: 56.25em) {
   .header {
@@ -180,8 +166,7 @@ body {
 }
 .btn:hover {
   outline: none;
-  -webkit-animation: pulsate 1s infinite;
-          animation: pulsate 1s infinite;
+  animation: pulsate 1s infinite;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -305,7 +290,6 @@ body {
   text-decoration: none;
   text-transform: capitalize;
   transition: all 0.4s;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
@@ -394,7 +378,6 @@ body {
   position: relative;
   overflow: hidden;
   display: grid;
-  grid-template-rows: repeat(3, -webkit-max-content);
   grid-template-rows: repeat(3, max-content);
   grid-template-columns: 70vw;
   row-gap: 3rem;
@@ -469,7 +452,6 @@ body {
 .form {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(2, -webkit-max-content);
   grid-template-columns: repeat(2, max-content);
 }
 .form__input {
@@ -501,11 +483,6 @@ body {
   outline: none;
 }
 .form__input:-moz-placeholder-shown ~ .form__label {
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-4rem);
-}
-.form__input:-ms-input-placeholder ~ .form__label {
   opacity: 0;
   visibility: hidden;
   transform: translateY(-4rem);
@@ -674,7 +651,6 @@ body {
 
 .behind__box {
   position: relative;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   padding-bottom: 2rem;
@@ -747,87 +723,84 @@ body {
 }
 
 .partners {
-  overflow: hidden;
-  background-color: #f5f5f5;
   grid-column: 1/-1;
-  padding: 5rem;
-  position: relative;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  background-image: url(../img/pattern-pizzes.svg);
+  background-size: 10rem;
+  background-repeat: no-repeat;
+  background-position: left bottom;
 }
-@media only screen and (max-width: 45em) {
+@media only screen and (min-width: 56.25em) {
   .partners {
-    padding: 2.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 4rem;
+    gap: 5rem;
   }
 }
-.partners__box {
-  padding: 10rem;
-  box-shadow: 0 1rem 2.5rem rgba(69, 199, 202, 0.2);
-  width: 40rem;
-  text-align: center;
-  margin-top: 2rem;
-}
-@media only screen and (max-width: 45em) {
-  .partners__box {
-    width: 15rem;
-    padding: 2rem;
+@media only screen and (max-width: 500px) {
+  .partners {
+    background-size: 8rem;
   }
 }
 .partners__container {
-  margin-top: 3.5rem;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  overflow: hidden;
+  justify-content: center;
 }
-@media only screen and (max-width: 45em) {
+@media only screen and (min-width: 56.25em) {
   .partners__container {
-    margin-top: 0;
+    width: 80%;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    padding: 2rem;
   }
 }
-.partners__add {
-  height: 7rem;
-  width: 7rem;
-  position: absolute;
-  top: 84%;
-  left: 0;
-}
-@media only screen and (max-width: 45em) {
-  .partners__img {
-    height: 100%;
-    width: 60%;
+@media only screen and (max-width: 56.25em) {
+  .partners__container {
+    height: 28rem;
+    margin: 4rem 0;
   }
 }
-.partners__link {
-  position: absolute;
-  width: 14rem;
-  color: transparent;
+.partners__wrap {
+  width: 37rem;
+  height: 24rem;
+  box-shadow: 0px 0px 30px rgba(75, 150, 220, 0.15);
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.7s;
 }
-.partners__boat {
-  position: absolute;
-  display: grid;
-  grid-template-columns: repeat(2, -webkit-min-content);
-  grid-template-columns: repeat(2, min-content);
-  top: 85%;
-  left: 0.1%;
-}
-@media only screen and (max-width: 45em) {
-  .partners__boat {
-    top: 4%;
-  }
-}
-.partners__boat--img {
-  width: 3rem;
-}
-@media only screen and (max-width: 45em) {
-  .partners__boat--img {
-    width: 2rem;
+@media only screen and (max-width: 56.25em) {
+  .partners__wrap {
+    position: absolute;
+    opacity: 0;
   }
 }
 
-.link__box {
-  transition: transform 0.4s;
-  width: 100%;
+.dots {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3rem;
+  gap: 2rem;
 }
-.link__box:hover {
-  transform: scale(1.15) skewY(2deg);
+.dots__dot {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: #4b96dc;
+  border: none;
+  transition: all 0.4s;
+}
+.dots__dot--active {
+  transform: scale(2);
+}
+.dots__dot1--active {
+  transform: scale(1.8);
 }
 
 .team {
@@ -844,7 +817,6 @@ body {
   align-items: center;
   align-content: center;
   grid-template-columns: 1fr;
-  grid-template-rows: -webkit-max-content;
   grid-template-rows: max-content;
 }
 .team__box {
@@ -880,8 +852,19 @@ body {
 }
 .staff__container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+}
+@media only screen and (min-width: 600px) {
+  .staff__container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .staff__container {
+    height: 65rem;
+  }
 }
 .staff__portrait {
   transform: translateX(2rem) translateY(1rem);
@@ -894,10 +877,13 @@ body {
   height: 60rem;
   width: 32rem;
   box-shadow: 0 1rem 2.5rem rgba(69, 199, 202, 0.2);
-  transition: transform 0.3s;
+  transition: all 0.4s;
+  border-radius: 1.5rem;
 }
-.staff__box:hover {
-  transform: scale(1.06);
+@media only screen and (max-width: 600px) {
+  .staff__box {
+    position: absolute;
+  }
 }
 .staff__name {
   font-size: 2rem;
