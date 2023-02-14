@@ -12,7 +12,8 @@
 		background-size: 70%;
 	}
 	@media only screen and (max-width: $bp-medium) {
-		background-size: 90%;
+		background-size: 80%;
+		background-position: 100% 92%;
 	}
 	@media only screen and (max-width: $bp-small) {
 		background-size: 100%;
@@ -538,6 +539,12 @@
 		background-color: $primary;
 		color: $white;
 		padding: 3rem 5rem;
+		@media only screen and (max-width: $bp-medium) {
+			align-items: center;
+			gap: 0.5rem;
+			padding: 1.8rem;
+			margin-bottom: 7rem;
+		}
 		@media only screen and (max-height: 680px) {
 			padding: 1rem;
 		}
@@ -545,6 +552,7 @@
 	&__terms {
 		display: flex;
 		gap: 1.5rem;
+
 		&__link {
 			color: $white;
 			transition: all 0.3s;
