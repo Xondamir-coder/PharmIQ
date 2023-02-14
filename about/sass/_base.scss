@@ -36,3 +36,12 @@ body {
 	grid-template-rows: repeat(4, max-content);
 	grid-template-columns: repeat(4, 1fr);
 }
+a {
+	text-decoration: none;
+	color: inherit;
+	&:hover {
+		color: #43cfcf;
+		transform: translateY(-3px);
+		text-shadow: 0.5rem 1rem 2rem rgb(0 0 0 / 35%);
+	}
+}
