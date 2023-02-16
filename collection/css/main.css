@@ -1,17 +1,3 @@
-@-webkit-keyframes pulsate {
-  0% {
-    transform: scale(1);
-    box-shadow: none;
-  }
-  50% {
-    transform: scale(1.05);
-    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.15);
-  }
-  100% {
-    transform: scale(1);
-    box-shadow: none;
-  }
-}
 @keyframes pulsate {
   0% {
     transform: scale(1);
@@ -138,8 +124,7 @@
 }
 .btn:hover {
   outline: none;
-  -webkit-animation: pulsate 1s infinite;
-          animation: pulsate 1s infinite;
+  animation: pulsate 1s infinite;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -263,7 +248,6 @@
   text-decoration: none;
   text-transform: capitalize;
   transition: all 0.4s;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
@@ -352,7 +336,6 @@
   position: relative;
   overflow: hidden;
   display: grid;
-  grid-template-rows: repeat(3, -webkit-max-content);
   grid-template-rows: repeat(3, max-content);
   grid-template-columns: 70vw;
   row-gap: 3rem;
@@ -427,7 +410,6 @@
 .form {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(2, -webkit-max-content);
   grid-template-columns: repeat(2, max-content);
 }
 .form__input {
@@ -459,11 +441,6 @@
   outline: none;
 }
 .form__input:-moz-placeholder-shown ~ .form__label {
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-4rem);
-}
-.form__input:-ms-input-placeholder ~ .form__label {
   opacity: 0;
   visibility: hidden;
   transform: translateY(-4rem);
@@ -632,7 +609,6 @@
 
 .behind__box {
   position: relative;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   padding-bottom: 2rem;
@@ -725,7 +701,6 @@
 }
 .reasons__box {
   display: grid;
-  grid-template-columns: 27rem -webkit-max-content;
   grid-template-columns: 27rem max-content;
   align-items: center;
 }
@@ -861,7 +836,6 @@ html {
 }
 @media only screen and (max-width: 45em) {
   .section--1 {
-    height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
     margin-top: 11rem;
@@ -890,7 +864,6 @@ html {
   padding-top: 4rem;
   display: grid;
   grid-template-columns: minmax(100px, 1fr) minmax(786px, 70vw) 1fr;
-  grid-template-rows: -webkit-max-content 10rem;
   grid-template-rows: max-content 10rem;
 }
 @media only screen and (max-width: 56.25em) {
@@ -921,13 +894,24 @@ html {
   justify-content: center;
   gap: 3rem;
 }
+@media only screen and (max-width: 650px) {
+  .section--2__box--2 {
+    height: 50rem;
+  }
+}
 .section--2__wrap {
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.5s;
   background-color: #fff;
   width: 27rem;
   margin-top: 5rem;
   display: flex;
   flex-direction: column;
+}
+@media only screen and (max-width: 650px) {
+  .section--2__wrap {
+    position: absolute;
+  }
 }
 .section--2__wrap__text {
   padding: 1rem;
@@ -978,6 +962,28 @@ html {
 .section--2__img {
   width: clamp(5rem, 60%, 10rem);
   margin-bottom: 6rem;
+}
+
+.dots {
+  grid-column: 2/span 1;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.dots__dot {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: #4b96dc;
+  border: none;
+  transition: all 0.4s;
+}
+.dots__dot--active {
+  transform: scale(2);
+}
+
+.dots-1__dot--active {
+  transform: scale(2);
 }
 
 section {

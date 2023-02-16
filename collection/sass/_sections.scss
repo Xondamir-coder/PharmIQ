@@ -63,9 +63,16 @@
 		flex-wrap: wrap;
 		justify-content: center;
 		gap: 3rem;
+		@media only screen and (max-width: 650px) {
+			height: 50rem;
+		}
 	}
 	&__wrap {
+		@media only screen and (max-width: 650px) {
+			position: absolute;
+		}
 		box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.05);
+		transition: all 0.5s;
 		background-color: $white;
 		width: 27rem;
 		margin-top: 5rem;
@@ -123,6 +130,28 @@
 	&__img {
 		width: clamp(5rem, 60%, 10rem);
 		margin-bottom: 6rem;
+	}
+}
+.dots {
+	grid-column: 2 / span 1;
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	&__dot {
+		width: 1rem;
+		height: 1rem;
+		border-radius: 50%;
+		background: #4b96dc;
+		border: none;
+		transition: all 0.4s;
+		&--active {
+			transform: scale(2);
+		}
+	}
+}
+.dots-1__dot {
+	&--active {
+		transform: scale(2);
 	}
 }
 section {
