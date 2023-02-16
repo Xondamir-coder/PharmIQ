@@ -1,6 +1,6 @@
 'use strict';
 var x = window.matchMedia('(max-width: 900px)');
-var y = window.matchMedia('(max-width: 530px)');
+var y = window.matchMedia('(max-width: 600px)');
 const slider = function () {
 	if (x.matches) {
 		const dotContainer = document.querySelector('.dots');

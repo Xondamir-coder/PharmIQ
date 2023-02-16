@@ -45,6 +45,13 @@
 			position: absolute;
 			opacity: 0;
 		}
+		& a {
+			transition: all 0.2s;
+			border-radius: 20%;
+			&:hover {
+				box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.15);
+			}
+		}
 	}
 }
 .dots {
