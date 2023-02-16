@@ -50,8 +50,8 @@
 	}
 	&__container {
 		width: 70vw;
+		height: 100%;
 		display: flex;
-		gap: 13rem;
 		flex-direction: column;
 		align-items: center;
 		@media only screen and (max-width: $bp-medium) {
@@ -62,7 +62,11 @@
 		}
 	}
 	&__list {
+		height: 100vh;
 		list-style: none;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 		@media only screen and (max-width: $bp-medium) {
 			padding-left: 5rem;
 		}
@@ -165,8 +169,8 @@
 		@media only screen and (max-width: 630px) {
 			height: 65rem;
 		}
+		height: 100vh;
 		padding-top: 3rem;
-		height: max-content;
 		display: flex;
 		gap: 3rem;
 		flex-wrap: wrap;
@@ -176,6 +180,7 @@
 	&__wrap {
 		padding: 1rem;
 		display: flex;
+		margin-bottom: 20rem;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
@@ -184,6 +189,9 @@
 		box-shadow: 0px 4px 35px rgba(4, 59, 80, 0.1);
 		border-radius: 5px;
 		@media only screen and (max-width: 630px) {
+			position: absolute;
+		}
+		@media only screen and (max-height: 700px) {
 			position: absolute;
 		}
 	}
@@ -266,6 +274,7 @@
 		padding-top: 12rem;
 	}
 	&__container {
+		height: 100vh;
 		padding-top: 3rem;
 		display: flex;
 		flex-wrap: wrap;
@@ -278,6 +287,7 @@
 	}
 	&__box {
 		box-shadow: 0px 4px 35px rgba(4, 59, 80, 0.1);
+		margin-bottom: 20rem;
 		width: 37rem;
 		display: flex;
 		flex-direction: column;
