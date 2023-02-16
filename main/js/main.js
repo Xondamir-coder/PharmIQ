@@ -86,8 +86,8 @@ document.addEventListener('keydown', (event) => {
 
 document.body.ontouchstart = start_f;
 document.body.ontouchend = end_f;
-``;
 
+/* Slider */
 var x = window.matchMedia('(max-width: 630px)');
 const slider = function (name, dot) {
 	if (x.matches) {
@@ -158,3 +158,27 @@ const slider = function (name, dot) {
 };
 slider('section--5__wrap', 'dots');
 slider('section--7__box', 'dots-1');
+
+/* Dropdown */
+const menu = document.querySelectorAll('.section--8__details');
+const menuText = document.querySelectorAll('.section--8__text');
+const menuBtn = document.querySelectorAll('.checkbox');
+
+menuText.forEach((m) => {
+	m.classList.add('hidden');
+});
+
+menu.forEach((m) => {
+	m.addEventListener('click', function (event) {
+		const { menu } = event.target.dataset;
+		document.querySelector(`.section--8__text[data-text="${menu}"]`).classList.toggle('hidden');
+		document.querySelector(`.checkbox[data-btn="${menu}"]`).style.transform = 'rotate(136deg)';
+	});
+});
+
+menuBtn.forEach((btn) => {
+	btn.addEventListener('click', (event) => {
+		const { btn } = event.target.dataset;
+		document.querySelector(`.section--8__text[data-text="${btn}"]`).classList.add('hidden');
+	});
+});
